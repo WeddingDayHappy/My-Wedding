@@ -538,6 +538,9 @@ section .donasi {
     .story h3 {
         transform: translateY(200%);
     }
+    .bi-heart {
+        display: none;
+    }
 
 }
 
