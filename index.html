@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <title>Debi &amp; Dian</title>
 </head>
 
@@ -26,7 +29,7 @@
             <h3>Dear <span> </span></h3>
             <p> </p>
             <div class="simply-countdown" data-aos="flip-down" data-aos-duration="1100" data-aos-delay="400"></div>
-            <a href="#undangan" class="btn btn-lg mt-4" onclick="enableScroll()"> <span id="home">Buka Undangan </span></a>
+            <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()"> <span id="home">Buka Undangan </span></a>
         </main>
     </section>
     <nav class="navbar navbar-expand-lg bg-body-transparent navbar-light bg-light sticky-top mynavbar">
@@ -49,7 +52,7 @@
                             <a class="nav-link" href="#info">Info Acara</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#story">The Story</a>
+                            <a class="nav-link" href="#story">the story</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#gallery">Gallery</a>
@@ -71,7 +74,8 @@
                 <div class="col-md-8 text-center" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="300">
                     <h2>Acara Pernikahan</h2>
                     <h3>Diselenggarakan pada 16 Januari 2025 di Kota Bumi</h3>
-                    <p>Oleh karena itu kami ingin mengundang Bapak/Ibu/Saudar/i di pernikahan kami</p>
+                    <span id="salam">Assalamu'alaikum Warahmatullahi Wabarakatuh </span><br>
+                    <p>Dengan memohon rahmat dan ridho Allah SWT.<br>Kami bermaksud menyelenggarakan acara pernikahan putra-putri kami: </p>
                 </div>
             </div>
             <div class="row couple">
@@ -82,16 +86,16 @@
                             <p>Mempelai pria dari Desa Gn. Sari, Rebang Tangkas, Way Kanan</p>
                             <p>Putra dari Bapak Satar <br> dan Ibu Idah</p>
                         </div>
-                        <div class="col-4" id="undangan" data-aos="fade-down-right" data-aos-duration="1000" data-aos-offset="300">
-                            <img src="img/pp.png" alt="debi" class="img-responsive rounded-circle">
+                        <div class="col-4" id="undangan" data-aos-offset="300">
+                            <img src="img/lambai1.jpg" alt="debi" class="img-responsive rounded-circle data-aos-hp1">
                         </div>
                     </div>
                 </div>
                 <span class="heart"><i class="bi bi-heart"></i></span>
                 <div class="col-lg-6">
                     <div class="row">
-                        <div class="col-4" data-aos="fade-down-left" data-aos-duration="1000" data-aos-offset="300">
-                            <img src="img/pp.png" alt="debi" class="img-responsive rounded-circle">
+                        <div class="col-4" data-aos-offset="300">
+                            <img src="img/lambai2.jpg" alt="debi" class="img-responsive rounded-circle data-aos-hp2">
                         </div>
                         <div class="col-8" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="300">
                             <h3>Dian</h3>
@@ -99,6 +103,10 @@
                             <p>Putri dari Bapak Erly dan Ibu Marwa</p>
                         </div>
                     </div>
+                </div>
+                <div class="text-center" style="margin-top: 100px;">
+                    <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i <br>berkenan hadir untuk memberikan doa restu kepada putra-putri kami.
+                        <br>Wassalamu'alaikum Warahmatullahi Wabarakatuh.</p>
                 </div>
             </div>
         </div>
@@ -138,7 +146,7 @@
                 <div class="col">
                     <ul class="timeline">
                         <li data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                            <div class="timeline-image" style="background-image: url(img/pp.png);"></div>
+                            <div class="timeline-image" style="background-image: url(img/pertemuan.png);"></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <span>Pertemuan</span>
@@ -147,7 +155,7 @@
                             </div>
                         </li>
                         <li class="timeline-inverted" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                            <div class="timeline-image" style="background-image: url(img/pp.png);"></div>
+                            <div class="timeline-image" style="background-image: url(img/takdir.png);"></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <span>Takdir Nya</span>
@@ -156,7 +164,7 @@
                             </div>
                         </li>
                         <li class="timeline" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-offset="100">
-                            <div class="timeline-image" style="background-image: url(img/pp.png);"></div>
+                            <div class="timeline-image" style="background-image: url(img/komitmen.png);"></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <span>Komitmen</span>
@@ -165,7 +173,7 @@
                             </div>
                         </li>
                         <li class="timeline-inverted" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-offset="300">
-                            <div class="timeline-image" style="background-image: url(img/pp.png);"></div>
+                            <div class="timeline-image" style="background-image: url(img/cincin.png);"></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <div class="row">
@@ -316,6 +324,7 @@
     <script src="customs/Gsap.js"></script>
     <!-- Gsap Custom -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="customs/aos.js"></script>
     <script src="script.js"></script>
     <script>
     simplyCountdown('.simply-countdown', {
