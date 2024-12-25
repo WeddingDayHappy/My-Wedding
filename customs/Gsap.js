@@ -38,3 +38,4 @@ for (let i = 0; i < timeLineHeadingLists.length; i++) {
         paragraph.textContent = isiCerita[i] || `teks ${i + 1}`; // Menggunakan textContent untuk menghilangkan <br>
     }
 }
+
