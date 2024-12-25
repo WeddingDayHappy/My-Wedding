@@ -29,7 +29,7 @@
             <a href="#undangan" class="btn btn-lg mt-4" onclick="enableScroll()"> <span id="home">Buka Undangan </span></a>
         </main>
     </section>
-    <nav class="navbar navbar-expand-lg bg-body-transparent navbar-light bg-light fixed-top mynavbar">
+    <nav class="navbar navbar-expand-lg bg-body-transparent navbar-light bg-light sticky-top mynavbar">
         <div class="container">
             <a class="navbar-brand" href="#">Debi & Dian</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -346,7 +346,7 @@
                 countUp: false // Count up after reaching zero
             });
             </script>
-            <!-- <script>
+            <script>
     const hamburger = document.querySelector('.navbar-toggler');
     const stickyTop = document.querySelector('.sticky-top');
 
@@ -358,7 +358,7 @@
     offcanvas.addEventListener('hidden.bs.offcanvas', function() {
         stickyTop.style.overflow = 'hidden';
     });
-</script> -->
+</script> 
             <script>
             const rootElement = document.querySelector(":root");
             const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
@@ -381,7 +381,7 @@
             function enableScroll() {
                 window.onscroll = function() {}
                 rootElement.style.scrollBehavior = 'smooth';
-                //localStorage.setItem('opened', 'true');
+                localStorage.setItem('opened', 'true');
                 playAudio();
             } 
 
@@ -407,9 +407,9 @@
                 isPlaying = !isPlaying;
             }
 
-            //if(!localStorage.getItem('opened')){
-            //    disableScroll();
-            // }
+            if(!localStorage.getItem('opened')){
+               disableScroll();
+             }
             disableScroll();
             </script>
             <script>
