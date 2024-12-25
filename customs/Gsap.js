@@ -27,7 +27,6 @@ for (let i = 0; i < timeLineHeadingLists.length; i++) {
             end: "60% top",
             trigger: timeLineHeadingLists[i],
             scrub: true,
-            markers: true,
         },
     });
 }
