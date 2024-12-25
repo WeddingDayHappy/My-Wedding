@@ -220,7 +220,7 @@ body {
     font-size: 1rem;
     letter-spacing: 1px;
     margin-bottom: 1rem;
-    display: blcok;
+    display: block;
 }
 
 .story p {
@@ -236,8 +236,8 @@ body {
 
 .timeline {
     list-style: none;
-    padding: 1.4rem 0;
-    margin-top: 1rem;
+    padding: 1.4rem;
+    margin-top: 10rem;   
     position: relative;
 }
 
@@ -252,7 +252,7 @@ body {
 }
 
 .timeline li {
-    margin-bottom: 1.5rem;
+    margin-bottom: 10rem;
     position: relative;
 }
 
@@ -282,14 +282,14 @@ body {
 
 
 .timeline li .timeline-panel {
-    width: 27%;
+    width: 40%;
     float: left;
-    border-bottom: 1px solid;
+    border: 1px solid #ccc;
     padding: 4rem;
     position: relative;
-    margin-left: 16%;
-    transform: translateY(-50%);
-
+    border-radius: 10px;
+    background-color: white;
+    margin-left: -40px;
 }
 
 
@@ -297,18 +297,29 @@ body {
     content: '';
     display: inline-block;
     position: absolute;
-    top: 10px;
-
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    top: 80px;
+    right: -15px;
 }
 
 .timeline li .timeline-panel::after {
     content: '';
-
+    position: absolute;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    top: 81px;
+    right: -13px;
 }
 
 .timeline li.timeline-inverted .timeline-panel {
     float: right;
-    margin-right: 16%;
+    margin-right: -40px;
 }
 
 .timeline li.timeline-inverted .timeline-panel::before {
@@ -396,38 +407,6 @@ footer .author {
     line-height: 0;
 }
 
-
-#smooth-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-}
-
-#smooth-content {
-    position: relative;
-    will-change: transform;
-}
-
-.section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-}
-
-@keyframes rotating {
-    from {
-        transform: rotate(0);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-
-}
 
 section .donasi {
     display: flex;
@@ -524,20 +503,45 @@ section .donasi {
     .simply-countdown>.simply-section {
         padding: 70px;
     }
+    .timeline::before {
+        left: 60px;
+    }
+
+    .timeline li .timeline-image {
+        left: 15px;
+        margin-left: 25px;
+        top: 16px;
+    }
 
     .timeline li .timeline-panel {
-        padding: 6rem;
-        margin-left: 9%;
+        width: 100% - 200%;
+        float: right;
+        margin-right: 140px;
+    }
+
+    .timeline li .timeline-panel::before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+
+    .timeline li .timeline-panel::after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -13px;
+        right: auto;
     }
 
     .timeline li.timeline-inverted .timeline-panel {
         float: right;
-        margin-right: 9%;
+        margin-right: 140px;
     }
 
     .story h3 {
         transform: translateY(200%);
     }
+
     .bi-heart {
         display: none;
     }
@@ -547,7 +551,7 @@ section .donasi {
 /*tablet*/
 @media (max-width: 768px) {
     html {
-        font-size: 1000%;
+        font-size: 100%;
     }
 
     .sticky-top {
@@ -579,6 +583,12 @@ section .donasi {
         transform: translateY(200%);
         overflow: hidden;
     }
+
+    .timeline li .timeline-image {
+        width: 140px;
+        height: 140px;
+
+    }
 }
 
 /*smartphone*/
@@ -604,4 +614,17 @@ section .donasi {
         margin-right: 1.4%;
     }
 
+    .timeline li .timeline-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .timeline li .timeline-panel {
+        width: 70px;
+        transform: translateX(-20px);
+    }
+
+    .timeline li .timeline-panel::before {
+        top: 30px;
+    }
 }
