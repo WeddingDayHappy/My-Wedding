@@ -10,6 +10,11 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+.salam {
+    font-family: 'Sacramento', serif;
+}
+
+
 .hero::before {
     content: '';
     position: absolute;
@@ -238,7 +243,7 @@ body {
 .timeline {
     list-style: none;
     padding: 1.4rem;
-    margin-top: 10rem;   
+    margin-top: 10rem;
     position: relative;
 }
 
@@ -495,6 +500,19 @@ section .donasi {
 
 }
 
+.data-aos-hp1 [data-aos="fade"] {
+    transform: translate3d(100px, 100px, 0);
+    /* Bergerak ke kanan bawah */
+    opacity: 0;
+}
+
+.data-aos-hp2 [data-aos="fade"].aos-animate {
+    transform: translate3d(0, 0, 0);
+    /* Kembali ke posisi asli */
+    opacity: 1;
+}
+
+
 /*laptop*/
 @media (max-width: 992px) {
     html {
@@ -504,6 +522,7 @@ section .donasi {
     .simply-countdown>.simply-section {
         padding: 70px;
     }
+
     .timeline::before {
         left: 60px;
     }
@@ -546,6 +565,16 @@ section .donasi {
     .bi-heart {
         display: none;
     }
+
+    .data-aos-hp1 {
+        content: url(img/lambai3.jpg);
+    }
+
+    .data-aos-hp2 {
+        content: url(img/lambai4.jpg);
+    }
+
+
 
 }
 
